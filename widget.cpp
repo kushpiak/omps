@@ -406,7 +406,7 @@ bool Widget::json_data_load(QJsonObject& root)
                 structVar->newPosition(structVar->pos());
                 structVar->action_moving(false);
 
-                connect(structVar,SIGNAL(PointPresed(cbase*,QPointF)),this,SLOT(onPointPresed(cbase*)));
+                connect(structVar,SIGNAL(PointPresed(cbase*)),this,SLOT(onPointPresed(cbase*)));
                 connect(structVar,SIGNAL(newPos(cbase*)),this,SLOT(onNewPos(cbase*)));
 
 
